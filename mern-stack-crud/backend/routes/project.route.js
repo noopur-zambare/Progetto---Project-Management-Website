@@ -18,7 +18,7 @@ projectSchema.create(req.body, (error, data) => {
 });
 
 // READ Projects
-router.get("/", (req, res) => {
+router.get("/signup", (req, res) => {
 projectSchema.find((error, data) => {
 	if (error) {
 	return next(error);
@@ -27,6 +27,16 @@ projectSchema.find((error, data) => {
 	}
 });
 });
+router.get("/", (req, res) => {
+	projectSchema.find((error, data) => {
+		if (error) {
+		return next(error);
+		} else {
+		res.json(data);
+			// console.log(req);
+		}
+	});
+	});
 
 // // READ SPECIFIC PROJECTS BY PARTICULAR PROF
 // router.get("/email/:email", (req, res) => {

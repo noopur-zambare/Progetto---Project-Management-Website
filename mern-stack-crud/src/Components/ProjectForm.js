@@ -5,32 +5,33 @@ import { FormGroup, FormControl, Button } from "react-bootstrap";
   
 const ProjectForm = (props) => {
   const validationSchema = Yup.object().shape({
-    projectname: Yup.string().required("Rquired"),
-    professorname: Yup.string().required("Rquired"),
+    projectname: Yup.string().required("Required"),
+    professorname: Yup.string().required("Required"),
     email: Yup.string()
       .email("You have enter an invalid email address")
-      .required("Rquired"),
-    overview: Yup.string().required("Rquired"),
-    prereq: Yup.string().required("Rquired"),
+      .required("Required"),
+    overview: Yup.string().required("Required"),
+    prereq: Yup.string().required("Required"),
     students: Yup.number()
       .positive("Invalid number")
       .integer("Invalid number")
-      .required("Rquired"),
+      .required("Required"),
     duration: Yup.number()
     .positive("Invalid month")
     .integer("Invalid month")
-    .required("Rquired"),
+    .required("Required"),
     vacancy: Yup.number()
       .positive("Invalid")
       .integer("Invalid ")
-      .required("Rquired"),
+      .required("Required"),
   });
   console.log(props);
   return (
     <div className="form-wrapper">
       <Formik {...props} validationSchema={validationSchema}>
         <Form>
-          <FormGroup>Project Title
+          <center>
+          <FormGroup><h5 style={{color:"white"}}>Project Title </h5>
             <Field name="projectname" type="text" 
                 className="form-control" />
             <ErrorMessage
@@ -39,7 +40,7 @@ const ProjectForm = (props) => {
               component="span"
             />
           </FormGroup>
-          <FormGroup>Professor Name
+          <FormGroup><h5 style={{color:"white"}}>Professor Name</h5>
             <Field name="professorname" type="text" 
                 className="form-control" />
             <ErrorMessage
@@ -48,7 +49,7 @@ const ProjectForm = (props) => {
               component="span"
             />
           </FormGroup>
-          <FormGroup>Email
+          <FormGroup><h5 style={{color:"white"}}>Email</h5>
             <Field name="email" type="text" 
                 className="form-control" />
             <ErrorMessage
@@ -57,7 +58,7 @@ const ProjectForm = (props) => {
               component="span"
             />
           </FormGroup>
-          <FormGroup>Overview of the project
+          <FormGroup><h5 style={{color:"white"}}>Overview of the project</h5>
             <Field name="overview" type="text" 
                 className="form-control" />
             <ErrorMessage
@@ -66,7 +67,7 @@ const ProjectForm = (props) => {
               component="span"
             />
           </FormGroup>
-          <FormGroup>Pre-requisite
+          <FormGroup><h5 style={{color:"white"}}>Pre-requisite</h5>
             <Field name="prereq" type="text" 
                 className="form-control" />
             <ErrorMessage
@@ -75,7 +76,7 @@ const ProjectForm = (props) => {
               component="span"
             />
           </FormGroup>
-          <FormGroup>Students Required
+          <FormGroup><h5 style={{color:"white"}}>Students Required</h5>
             <Field name="students" type="number" 
                 className="form-control" />
             <ErrorMessage
@@ -84,7 +85,7 @@ const ProjectForm = (props) => {
               component="span"
             />
           </FormGroup>
-          <FormGroup>Duration In Months
+          <FormGroup><h5 style={{color:"white"}}>Duration In Months</h5>
             <Field name="duration" type="number" 
                 className="form-control" />
             <ErrorMessage
@@ -93,8 +94,10 @@ const ProjectForm = (props) => {
               component="span"
             />
           </FormGroup>
-          <FormGroup>Branch
+          <FormGroup><h5 style={{color:"white"}}>Branch</h5>
+          
             <Field name="branch" type="text" 
+            
                 className="form-control" />
             <ErrorMessage
               name="branch"
@@ -102,7 +105,8 @@ const ProjectForm = (props) => {
               component="span"
             />
           </FormGroup>
-          <FormGroup>Vaccancy
+         
+          <FormGroup><h5 style={{color:"white"}}>Vacancy</h5>
             <Field name="vacancy" type="number" 
                 className="form-control" />
             <ErrorMessage
@@ -117,6 +121,7 @@ const ProjectForm = (props) => {
             {props.children}
           </Button>
           <br/>
+          </center>
         </Form>
       </Formik>
     </div>

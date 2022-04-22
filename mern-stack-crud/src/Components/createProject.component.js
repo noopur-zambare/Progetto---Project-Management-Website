@@ -1,14 +1,9 @@
 import React from "react";
 
-
 import { Nav, Navbar, Container, Row, Col }
 		from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-
-
 import "./nav2.css";
-
-
 import { BrowserRouter as Router, Switch,
 	Route, Link } from "react-router-dom";
 
@@ -26,7 +21,7 @@ return (
 	<Router>
 	<div className="App">
 		<header className="App-header">
-		<Navbar bg="success" variant="dark" color="black" text-color="black">
+		<Navbar bg="danger" variant="dark" color="black" text-color="black">
 			<Container>
 			<Navbar.Brand>
 				<Link to={"/create-project"}

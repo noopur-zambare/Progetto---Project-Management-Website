@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Table } from "react-bootstrap";
 import ProjectTableRow from "./ProjectTableRow";
+import './table.css';
 
 const ProjectList = () => {
 const [projects, setProjects] = useState([]);
@@ -18,14 +19,17 @@ useEffect(() => {
 }, []);
 
 const DataTable = () => {
-	return projects.map((res, i) => {
+	return projects.filter((res,i)=>res.email==localStorage.getItem("user")).map((res, i) => {
 	return <ProjectTableRow obj={res} key={i} />;
 	});
 };
 
 return (
 	<div className="table-wrapper">
-	<Table striped bordered hover>
+		<div className="container">
+			<div className="card">
+		
+	<Table striped bordered hover className="t">
 		<thead>
 		<tr>
 			<th>Project Title</th>
@@ -42,6 +46,7 @@ return (
 		</thead>
 		<tbody>{DataTable()}</tbody>
 	</Table>
+	</div></div>
 	</div>
 );
 };

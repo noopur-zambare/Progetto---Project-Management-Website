@@ -22,6 +22,7 @@ import ProjectList1 from
 "./Components/project-list1.component";
 import Home from 
 	"./Components/Home.component";
+	
 import Add from "./Components/createProject.component";
 import About from "./Components/About.component";
 import Grid from "./Components/Grid.component";
@@ -48,7 +49,7 @@ return (
 			<Navbar.Brand>
 				<Link to={"/Home"}
 				className="nav-link">
-				<h2>Progetto - Project Management Website</h2>
+				<h2><b>Progetto</b> </h2>
 				</Link>
 			</Navbar.Brand>
 			
@@ -56,27 +57,27 @@ return (
 			<Nav>
 				<Link to={"/Home"}
 					className="nav-link">
-					Home
+					<h5><b>Home</b></h5>
 				</Link>
 				</Nav>
 
 				<Nav>
 				<Link to={"/Sign"}
 					className="nav-link">
-					Professor Login
+					<h5><b>Professor Login</b></h5>
 				</Link>
 				</Nav>
 
 				<Nav>
 				<Link to={"/project-list1"}
 					className="nav-link">
-					Project List
+					<h5><b>Project List</b></h5>
 				</Link>
 				</Nav>
 				<Nav>
 				<Link to={"/About"}
 					className="nav-link">
-					About
+					<h5><b>About</b></h5>
 				</Link>
 				</Nav>
 			</Nav>

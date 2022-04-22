@@ -25,7 +25,9 @@ const DataTable = () => {
 
 return (
 	<div className="table-wrapper">
-	<Table striped bordered hover>
+		<div className="container">
+			<div className="card">
+	<Table striped bordered hover className="t">
 		<thead>
 		<tr>
 			<th>Project Title</th>
@@ -42,7 +44,7 @@ return (
 		</thead>
 		<tbody>{DataTable()}</tbody>
 	</Table>
-	</div>
+	</div></div></div>
 );
 };
 

@@ -15,8 +15,8 @@ export default function About(){
         <h1><b>Noopur Zambare</b></h1>
         <p>Description</p>
       <ul>
-          <li>skill1</li>
-          <li>skill2</li>
+          <li>Developer</li>
+          <li></li>
       </ul>
       </div>
     </div>

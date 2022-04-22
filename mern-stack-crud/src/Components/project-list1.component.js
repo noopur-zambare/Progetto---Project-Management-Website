@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Table } from "react-bootstrap";
 import ProjectTableRow1 from "./ProjectTableRow1";
+import './table.css';
+
+
 
 const ProjectList1 = () => {
 const [projects, setProjects] = useState([]);
@@ -25,9 +28,13 @@ const DataTable = () => {
 
 return (
 	<div className="table-wrapper">
-	<Table striped bordered hover>
+		<div className="container">
+			<div className="card">
+	<Table striped bordered hover className="t">
 		<thead>
+		<tr>Project List</tr>
 		<tr>
+			
 			<th>Project Title</th>
             <th>Professor</th>
 			<th>Email</th>
@@ -42,6 +49,7 @@ return (
 		</thead>
 		<tbody>{DataTable()}</tbody>
 	</Table>
+	</div></div>
 	</div>
 );
 };
