@@ -20,19 +20,7 @@ export default function About(){
       </ul>
       </div>
     </div>
-    <div className='m2'>
-    <div className='imgBx'>
-        <img src={a}/>
-    </div>
-    <div className='content'>
-      <h1><b>Nitin Prasad</b></h1>
-      <p>Chemical Engineering 2nd Year</p>
-      <ul>
-         <li>Android Developer</li>
-          
-      </ul>
-    </div>
-  </div>
+    
   </>
   )
 }
