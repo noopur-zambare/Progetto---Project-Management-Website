@@ -9,6 +9,8 @@ import d from './images/bb.jpg';
 import e from './images/ci.jpg';
 import f from './images/ch.jpg';
 import g from './images/cs.jpg';
+import i from './images/mt.jpg';
+import j from './images/q.jpg';
 import SocialFollow from './SocialFollow.component';
 import { BrowserRouter as Router, Switch,
 	Route, Link } from "react-router-dom";
@@ -16,10 +18,13 @@ export default function Grid() {
   return (
     <>
     <div className='slide'>
-      {/* <div className='imgBx'>
-          <img src={p}/>
-      </div> */}
+      
+      <center>
+      <div className='imgBx'>
+        <img src={j}/>
+      </div></center><br/>
       <div className='content'>
+      <div className='bg'>
         <h1><b>Design Credit Course</b></h1>
         <p>The aim of this course is to inculcate the design thinking among the students and facilitate gaining design immersion experience. Student has to earn 6 credits from the various categories decided in the quidelines. It gives an opportunity to be the part of various projects being going on. Also enhances the critical thinking and indroduces to problem solving strategies.</p><br/>
 
@@ -46,7 +51,8 @@ export default function Grid() {
           <li>For Categories 2-4, the committee will decide satisfactory/unsatisfactory/continuation grades based on the presentation in consultation with the research/project/internship advisor.</li>
           <li>For Categories. 5-6, the committee will decide satisfactory/unsatisfactory/continuation grades based on the presentation in consultation with the course instructor.</li>
           Department may conduct evaluations twice in May and November.
-        </ul><br/><br/>
+        </ul><br/><br/></div>
+        
 
 
 
@@ -139,7 +145,7 @@ export default function Grid() {
 
       
       <div className='imgBx'>
-        <img src={b}/>
+        <img src={i}/>
       </div>
     <div className='content'>
       <h2><b><Link to={"/mt"}

@@ -13,10 +13,10 @@ export default function About(){
       </div>
       <div className='content'>
         <h1><b>Noopur Zambare</b></h1>
-        <p>Description</p>
+        <p>Mechanical Engineering 2nd Year</p>
       <ul>
-          <li>Developer</li>
-          <li></li>
+          <li>Full Stack Developer</li>
+      
       </ul>
       </div>
     </div>
@@ -26,10 +26,10 @@ export default function About(){
     </div>
     <div className='content'>
       <h1><b>Nitin Prasad</b></h1>
-      <p>Description</p>
+      <p>Chemical Engineering 2nd Year</p>
       <ul>
-         <li>skill1</li>
-          <li>skill2</li>
+         <li>Android Developer</li>
+          
       </ul>
     </div>
   </div>
