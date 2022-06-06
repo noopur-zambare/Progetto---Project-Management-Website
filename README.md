@@ -1,5 +1,5 @@
 # Progetto #
-***
+
 ## Project-Management-Website ##
 This website is developed using :
 * MongoDB
