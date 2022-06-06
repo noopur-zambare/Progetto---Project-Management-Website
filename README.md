@@ -7,9 +7,9 @@ This website is developed using :
 * JavaScript
 * CSS
 * HTML
-<br/>
+
 ## Features ##
-<hr/>
+***
 This website ensures the valid authentication of users. This website allows admin to :
 * Add new project
 * Update projects
