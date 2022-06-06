@@ -1,5 +1,11 @@
 # Progetto---Project-Management-Website
-This website is developed using MERN stack.
+This website is developed using :
+* MongoDB
+* React JS
+* Node JS
+* CSS
+* HTML
+* 
 ### Features ###
 This website allows admin to :
 * Add new project
