@@ -7,12 +7,12 @@ This website is developed using :
 * JavaScript
 * CSS
 * HTML
-<br>
+<br/>
 ## Features ##
-<hr>
+<hr/>
 This website ensures the valid authentication of users. This website allows admin to :
 * Add new project
 * Update projects
 * Delete existing projects
-<br>
+<br/>
 It will take user to the admin portal on successfull authentication. 
