@@ -1,6 +1,9 @@
 # Progetto #
 
 ## Project-Management-Website ##
+
+![Screenshot (1951)](https://user-images.githubusercontent.com/92505473/187043066-6f236444-3121-454a-82a5-935f955d9418.png)
+
 This website is developed using :
 * MongoDB
 * React JS
