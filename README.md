@@ -2,7 +2,7 @@
 
 ## Project-Management-Website ##
 
-<img src="https://user-images.githubusercontent.com/92505473/187043066-6f236444-3121-454a-82a5-935f955d9418.png" width="850" height="500">
+<img src="https://user-images.githubusercontent.com/92505473/187043066-6f236444-3121-454a-82a5-935f955d9418.png" width="800" height="450">
 
 This website is developed using :
 * MongoDB
