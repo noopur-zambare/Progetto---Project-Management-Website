@@ -16,7 +16,6 @@ This website is developed using :
 
 https://github.com/noopur-zambare/Progetto---Project-Management-Website/assets/92505473/84f914df-b9c6-41fc-ac91-4ce5fda12fc8
 
-
 ## Features ##
 
 This website ensures the valid authentication of users. This website allows admin to :
